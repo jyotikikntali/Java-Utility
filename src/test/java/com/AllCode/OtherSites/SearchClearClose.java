@@ -37,12 +37,13 @@ public class SearchClearClose  extends ActionsinPage{
 	public  void PassValueToSearchBox( String SerachKeyword,String SearchUrl,String browser,int Stime, List<String> urls) throws AWTException, InterruptedException, IOException {
 		try {
 				        Robot robot = new Robot();
-				        Thread.sleep(4000);
-				        Thread.sleep(5000);
+			                 Sleep(3);
+				       // Thread.sleep(4000);
+				       // Thread.sleep(5000);
 				        for (char c : SerachKeyword.toCharArray()) {
 				            robot.delay(1000);
 				            int keyCode = KeyEvent.getExtendedKeyCodeForChar(c);
-				            robot.delay(2000);
+				            //robot.delay(2000);
 				            robot.keyPress(keyCode);
 				            robot.keyRelease(keyCode);
 				        }
